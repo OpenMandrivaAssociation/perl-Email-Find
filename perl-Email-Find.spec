@@ -12,6 +12,7 @@ Url:		http://www.cpan.org
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Email/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel >= 0:5.600
 BuildRequires:	perl-Email-Valid
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description

@@ -1,6 +1,6 @@
 %define module 	Email-Find
 %define version 0.10
-%define release %mkrel 1
+%define release %mkrel 3
 
 Summary:	Email-Find perl module
 Name: 		perl-%{module}

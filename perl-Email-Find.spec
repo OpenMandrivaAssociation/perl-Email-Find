@@ -1,18 +1,18 @@
-%define module 	Email-Find
-%define version 0.10
-%define release %mkrel 3
+%define upstream_name 	 Email-Find
+%define upstream_version 0.10
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Email-Find perl module
-Name: 		perl-%{module}
-Version: 	%{version}
-Release: 	%{release}
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://www.cpan.org
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Email/%{module}-%{version}.tar.bz2
-BuildRequires:	perl-devel >= 0:5.600
+Url:		http://www.cpan.org/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-Email-Valid
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 BuildArch:	noarch
 
 %description
@@ -27,7 +27,7 @@ obvious red herrings and false addresses, but there's only so much which
 can be done without a human.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,5 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changes
 %{perl_vendorlib}/Email/Find*
 %{_mandir}/*/*
-
-

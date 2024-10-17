@@ -8,7 +8,7 @@ Release:	4
 Summary:	Email-Find perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://www.cpan.org/%{upstream_name}
+Url:		https://www.cpan.org/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel

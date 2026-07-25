@@ -2,14 +2,14 @@
 %define upstream_version 0.10
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Email-Find perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://www.cpan.org/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Email-Find
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/Email-Find-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
